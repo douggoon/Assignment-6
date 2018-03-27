@@ -19,9 +19,9 @@ library(ggmap)
 library(tidyverse)
 
 map <- get_googlemap(center = c(-4.55,50.83),zoom = 15)
-location <- data.frame(lat=c(50.835869,50.830540,50.834467,50.830161, 50.829036),
-                    lon=c(-4.553962,-4.551365,-4.552814,-4.544088, -4.548769),
-                    area=c("Crooklets Beach","Summerleaze Beach","Cricket Club","Bar 35","Castle Bude"))
+location <- data.frame(lat=c(50.835869,50.830540,50.834467,50.830161, 50.829036, 50.826973,50.828710),
+                    lon=c(-4.553962,-4.551365,-4.552814,-4.544088, -4.548769, -4.547858, -4.544529),
+                    area=c("Crooklets Beach","Summerleaze Beach","Cricket Club","Bar 35","Castle Bude", "The Falcon Hotel", "The Globe Hotel"))
 
 from <- "Bude North Cornwall Cricket Club"
 to <- "Bar 35, Belle Vue Ln, Bude EX23 8BR"
@@ -53,4 +53,7 @@ ggmap(map2)+
 
 ![Bude Castle](Castle.jpg) 
 
+![The Globe Hotel](globe.jpg) 
+
+![The Falcon Hotel](falcon.jpg) 
 
